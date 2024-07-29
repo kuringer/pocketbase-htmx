@@ -1,0 +1,14 @@
+package app
+
+import "github.com/gobeli/pocketbase-htmx/lib"
+
+templ Home() {
+  @lib.BaseLayout() {
+    <h1>Vitajte v našej aplikácii</h1>
+    <p>Vyberte si jednu z možností:</p>
+    <ul>
+      <li><a href="/auth/login">Prihlásiť sa</a></li>
+      <li><a href="/auth/register">Registrovať sa</a></li>
+    </ul>
+  }
+}
